@@ -200,6 +200,14 @@ line-height: 1em;
     color: #3a3a3a;
 }
 
+/*Media query: large or landscape phones (576px or more)*/
+@media screen and (min-width: 768px) {
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 /*Media query: tablets and larger (768px or more)*/
 @media screen and (min-width: 768px) {
 
@@ -256,7 +264,10 @@ line-height: 1em;
             text-align:end;
             align-self: flex-end;
         }
-       
+      /*Gallery*/ 
+      #photos {
+        column-count: 3;
+      }
 }
 
 /*Large devices (laptops and desktops, 992px and up)*/
@@ -264,6 +275,10 @@ line-height: 1em;
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
 
+    }
+    /*Gallery*/
+    #photos {
+        column-count: 4;
     }
     /*Large devices of 1200px and up*/
 @media screen and (min-width: 1200px) {
