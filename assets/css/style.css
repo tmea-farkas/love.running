@@ -77,10 +77,17 @@ nav {
 
 /*Main*/
 main {
-    background-color: lightblue;
+
     /*Make main element taek up any surplus space to push footer down*/
     flex: 1 0 auto;
     margin-top: 47px;
+}
+
+/*Hero image*/
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
 
 /*Footer*/
@@ -91,6 +98,7 @@ main {
     justify-content: space-evenly;
     list-style-type: none;
 }
+
 #social-networks i {
     font-size: 160%;
     padding: 5%;
@@ -108,31 +116,37 @@ main {
         width: fit-content;
         padding-right: 1rem;
     }
+
     #menu {
         display: flex;
     }
-    #menu > li {
+
+    #menu>li {
         padding-left: 1rem;
     }
+
     .nav-toggle-label {
         display: none;
     }
+
     #logo {
         font-size: 280%;
         line-height: 75px;
         margin: 0 0.5rem;
     }
+
     /*Main content*/
-main {
-    /*Push main content down to accommodate larger header*/
-    margin-top: 79px;
-}
+    main {
+        /*Push main content down to accommodate larger header*/
+        margin-top: 79px;
+    }
 
 }
+
 /*Large devices (laptops and desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
-#menu a:hover{
-    border-bottom: 1px solid #3a3a3a;
+    #menu a:hover {
+        border-bottom: 1px solid #3a3a3a;
 
     }
 }
