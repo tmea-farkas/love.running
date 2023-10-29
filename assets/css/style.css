@@ -154,6 +154,12 @@ hr {
     align-items: center;
     justify-content: center;
 }
+ /*Times image*/
+ #times {
+     background-image: url(../images/dublin-city.webp) no-repeat center/cover;
+     display: flex;
+     flex-wrap: wrap;
+ }
 
 /*Footer*/
 #social-networks {
@@ -226,7 +232,7 @@ hr {
             text-align:end;
             align-self: flex-end;
         }
-
+       
 }
 
 /*Large devices (laptops and desktops, 992px and up)*/
